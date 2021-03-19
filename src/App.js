@@ -135,7 +135,7 @@ export default function App() {
                 <div className="card" key={genre.name}>
                   <h2>{genre.name}</h2>
                   <p>
-                    <i class="far fa-user" style={{ margin: "5px 0" }}>
+                    <i className="far fa-user" style={{ margin: "5px 0" }}>
                       &nbsp;{genre.singer}
                     </i>
                   </p>
