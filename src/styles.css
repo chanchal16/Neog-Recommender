@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/******css variables********/
+:root {
+  --primary: #33cc33;
+  --dark: #292524;
+  --bg: #1c1917;
+}
+
+.App {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+
+  /* min-height: 100vh; */
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #1c1917;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 5px;
+}
+
+/*******tabs***********/
+.tabs {
+  /* padding: 12px; */
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: transparent;
+  margin: 10px;
+}
+.tabs button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 12px 28px;
+  background-color: var(--bg);
+  color: white;
+  margin-bottom: 8px;
+}
+
+.tabs button:hover {
+  background-color: var(--dark);
+  color: #adebad;
+  border-bottom: 4px solid #adebad;
+}
+
+.tab.active,
+.tab.active:hover {
+  border-bottom: 4px solid var(--primary);
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+/****tablist************/
+.genre-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.card {
+  width: min(60%, 420px);
+  border: 1px solid white;
+  padding: 12px;
+  /* margin: auto; */
+  text-align: left;
+}
+.card p {
+  font-size: 20px;
+}
+
+.spotifylink {
+  float: right;
+  font-size: 18px;
+}
+.spotifylink:hover {
+  color: lawngreen;
+}
+
+/**************footer**********/
+footer {
+  padding: 8px;
+  background-color: var(--primary);
+}
+footer a {
+  color: white;
+  /* font-weight: bold; */
+  text-decoration: none;
+}
